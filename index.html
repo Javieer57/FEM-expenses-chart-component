@@ -20,6 +20,8 @@
 
 		<link rel="stylesheet" href="styles.css" />
 
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 		<title>Frontend Mentor | Expenses chart component</title>
 	</head>
 	<body>
@@ -34,6 +36,47 @@
 		<main class="body l-container">
 			<section class="graphs-container">
 				<h1>Spending - Last 7 days</h1>
+
+				<!-- 
+					Accesibility in canvas:
+					https://www.chartjs.org/docs/latest/general/accessibility.html
+					https://www.nomensa.com/blog/how-improve-web-accessibility-hiding-elements 
+				-->
+				<canvas id="myChart" height="170">
+					The text alternative for this canvas bar graphics is in the data table
+					below.
+				</canvas>
+
+				<table
+					summary="This is the text alternative for the canvas bar graphics."
+					class="is-hidden"
+				>
+					<caption>
+						Bar charts for the last seven days' spending.
+					</caption>
+					<tbody>
+						<tr>
+							<th scope="col">Day</th>
+							<th scope="col">Monday</th>
+							<th scope="col">Tuesday</th>
+							<th scope="col">Wednesday</th>
+							<th scope="col">Thursday</th>
+							<th scope="col">Friday</th>
+							<th scope="col">Saturday</th>
+							<th scope="col">Sunday</th>
+						</tr>
+						<tr>
+							<th scope="row">Dollars</th>
+							<td>17.45</td>
+							<td>34.91</td>
+							<td>52.36</td>
+							<td>31.07</td>
+							<td>23.39</td>
+							<td>43.28</td>
+							<td>25.48</td>
+						</tr>
+					</tbody>
+				</table>
 			</section>
 
 			<div class="body-divider"></div>
@@ -49,5 +92,7 @@
 				</p>
 			</section>
 		</main>
+
+		<script src="main.js"></script>
 	</body>
 </html>
