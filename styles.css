@@ -1,0 +1,140 @@
+/* Inspired in SMACSS methodology: http://smacss.com/ */
+
+/* :: Variables :: */
+:root {
+	/* Colors */
+	--soft-red: rgb(236, 119, 95);
+	--cyan: rgb(118, 181, 188);
+	--dark-brown: hsl(25, 47%, 15%);
+	--medium-brown: hsl(28, 10%, 53%);
+	--cream: hsl(27, 66%, 92%);
+	--very-pale-orange: hsl(33, 100%, 98%);
+
+	/* Typography */
+	--text-1: 16px;
+	--heading-1: 30px;
+	--heading-2: 24px;
+}
+
+/* :: Base :: */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--cream);
+	color: var(--dark-brown);
+	font-family: 'DM Sans', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+/* :: Layout :: */
+.header {
+	background-color: var(--soft-red);
+	color: var(--very-pale-orange);
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.body {
+	padding: 25px 20px;
+	background-color: var(--very-pale-orange);
+}
+
+.l-container {
+	width: min(450px, 93%);
+	margin: auto;
+	border-radius: 20px;
+}
+
+.l-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* :: Modules :: */
+.total-balance {
+	font-size: var(--heading-2);
+}
+
+.total-balance .text {
+	font-weight: normal;
+	font-size: var(--text-1);
+}
+
+.graphs-container h1 {
+	font-size: var(--heading-2);
+}
+
+.body-divider {
+	border: 2px solid var(--cream);
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+.month-balance {
+	display: flex;
+	font-size: var(--heading-1);
+	flex-direction: column;
+	gap: 5px;
+}
+
+.month-balance .text {
+	font-weight: normal;
+	font-size: var(--text-1);
+	color: var(--medium-brown);
+}
+
+.month-details {
+	font-size: var(--text-1);
+	color: var(--medium-brown);
+	text-align: right;
+}
+
+.month-details .number {
+	font-weight: bold;
+	color: var(--dark-brown);
+}
+
+/* :: Mediaqueries :: */
+@media screen and (min-width: 500px) {
+	:root {
+		/* Typography */
+		--text-1: 18px;
+		--heading-1: 48px;
+		--heading-2: 32px;
+	}
+
+	/* Modules */
+	.total-balance {
+		font-size: 32px;
+	}
+
+	.total-balance .text {
+		font-size: var(--text-1);
+	}
+
+	.graphs-container h1 {
+		font-size: 32px;
+	}
+
+	.month-balance {
+		font-size: 48px;
+	}
+
+	.month-balance .text {
+		font-size: var(--text-1);
+	}
+
+	.month-details {
+		font-size: var(--text-1);
+	}
+}

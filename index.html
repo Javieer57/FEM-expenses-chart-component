@@ -11,29 +11,40 @@
 			href="./images/favicon-32x32.png"
 		/>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles.css" />
+
 		<title>Frontend Mentor | Expenses chart component</title>
 	</head>
 	<body>
-		<header>
-			<h3>
-				<span>My balance</span><br />
+		<header class="header l-container l-flex">
+			<h3 class="total-balance">
+				<span class="text">My balance</span><br />
 				$921.48
 			</h3>
 			<img src="./images/logo.svg" alt="" aria-hidden="true" />
 		</header>
 
-		<main>
-			<section>
+		<main class="body l-container">
+			<section class="graphs-container">
 				<h1>Spending - Last 7 days</h1>
 			</section>
 
-			<section>
-				<h2>
-					<span>Total this month</span>
-					<span> $478.33 </span>
+			<div class="body-divider"></div>
+
+			<section class="l-flex">
+				<h2 class="month-balance">
+					<span class="text">Total this month</span>
+					<span class="number"> $478.33 </span>
 				</h2>
-				<p>
-					<span>+2.4%</span><br />
+				<p class="month-details">
+					<span class="number">+2.4%</span><br />
 					from last month
 				</p>
 			</section>
