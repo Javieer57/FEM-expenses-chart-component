@@ -50,7 +50,7 @@ img {
 
 .l-container {
 	width: min(450px, 93%);
-	margin: auto;
+	margin-inline: auto;
 	border-radius: 20px;
 }
 
@@ -58,6 +58,12 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.l-flex-column {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 
 /* :: Modules :: */
@@ -81,10 +87,7 @@ img {
 }
 
 .month-balance {
-	display: flex;
 	font-size: var(--heading-1);
-	flex-direction: column;
-	gap: 5px;
 }
 
 .month-balance .text {
