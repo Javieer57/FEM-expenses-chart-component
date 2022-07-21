@@ -50,7 +50,7 @@ img {
 
 .body {
 	padding: 25px 20px;
-	background-color: var(--very-pale-orange);
+	background-color: white;
 }
 
 .l-container {
@@ -63,6 +63,12 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.l-flex-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
 }
 
 .l-flex-column {
@@ -141,7 +147,6 @@ img {
 
 	.body {
 		padding: 25px 40px 45px;
-		background-color: var(--very-pale-orange);
 	}
 
 	/* Modules */
