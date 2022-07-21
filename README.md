@@ -21,8 +21,8 @@ El reto consiste en crear un componente que muestre la información de gastos de
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/expenses-chart-component-chartjs-u9fw6bf1I_)
+- Live Site URL: [Github page](https://javieer57.github.io/FEM-expenses-chart-component/)
 
 ## Mi proceso
 
