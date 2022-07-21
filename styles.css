@@ -27,6 +27,11 @@ body {
 	background-color: var(--cream);
 	color: var(--dark-brown);
 	font-family: 'DM Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 img {
@@ -39,7 +44,7 @@ img {
 	background-color: var(--soft-red);
 	color: var(--very-pale-orange);
 	padding: 20px;
-	margin-top: 50px;
+	/* margin-top: 50px; */
 	margin-bottom: 25px;
 }
 
@@ -49,7 +54,7 @@ img {
 }
 
 .l-container {
-	width: min(450px, 93%);
+	width: min(540px, 93%);
 	margin-inline: auto;
 	border-radius: 20px;
 }
@@ -127,6 +132,16 @@ img {
 		--text-1: 18px;
 		--heading-1: 48px;
 		--heading-2: 32px;
+	}
+
+	/* Layout */
+	.header {
+		padding: 25px 30px;
+	}
+
+	.body {
+		padding: 25px 40px 45px;
+		background-color: var(--very-pale-orange);
 	}
 
 	/* Modules */
